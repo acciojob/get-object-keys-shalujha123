@@ -1,10 +1,10 @@
 //your JS code here. If required.
+Object.prototype.getKeys = function(){
+	return Object.keys(this)
+}
 const student = {
-	name
+	name: "John",
+	
 }
 
-function getKeys(obj){
-	return Object.keys(obj)
-}
-
-console.log(getKeys(student))
+console.log(student.getKeys())
